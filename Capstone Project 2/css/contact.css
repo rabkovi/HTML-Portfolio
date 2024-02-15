@@ -1,0 +1,37 @@
+.container {
+    display: grid;
+    margin: auto;
+    grid-template-columns: 0.8fr 1fr;
+    width: fit-content;
+    height: 80vh;
+}
+
+.container .contact {
+    width: 250px;
+    margin: auto;
+}
+
+.container .details p {
+    font-size: 2rem;
+	font-weight: bold;
+	color: rgb(223, 170, 24);
+    padding-bottom: 20px;
+}
+
+@media (max-width: 850px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+    }
+    .container .contact {
+        margin: 0 0 60px 0;
+    }
+}
+
+@media (max-width: 677px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+        height: 60vh;
+    }
+}
