@@ -1,14 +1,20 @@
+main {
+    margin-top: 30px;
+}
+
 .container {
     display: grid;
     margin: auto;
     grid-template-columns: 0.8fr 1fr;
     width: fit-content;
-    height: 80vh;
+    min-height: 80vh;
 }
 
 .container .contact {
     width: 250px;
+    border-radius: 50px;
     margin: auto;
+    
 }
 
 .container .details p {

@@ -48,7 +48,8 @@ h1 {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	height: 50vh;
+	min-height: 50vh;
+	/* margin-top: 20px; */
 }
 
 .container .me-img {
@@ -56,6 +57,7 @@ h1 {
 	height: 300px;
 	border-radius: 50%;
 	filter: drop-shadow(0 0 0.9rem gray);
+	margin-top: 20px;
 }
 
 .myself {
