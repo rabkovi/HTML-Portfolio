@@ -1,22 +1,23 @@
-main {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 70vh;
-}
 .container {
+	display: flex;
+	justify-content: center;
+	align-items: flex-end;
+	min-height: 50vh;
+}
+
+.transparentskills {
     background: rgba(255, 255, 255, 0.2);
     box-shadow: 20px 20px 80px rgba(240, 164, 33, 0.2);
     width: 800px;
-    height: 350px;
+    height: fit-content;
     border-radius: 25px;
-    margin-top: 40px;
+    margin: 40px 0;
 }
 
-.container h1 {
+.transparentskills h1 {
     color: red;
     width: fit-content;
-    padding: 0 0 20px 0;
+    padding: 20px;
     margin: auto;
 }
 
@@ -31,6 +32,7 @@ footer {
 	margin-top: auto;
 	display: flex;
 	justify-content: center;
+    align-items: center;
 	margin-bottom: 20px;
 }
 
@@ -53,28 +55,25 @@ footer {
 }
 
 @media (max-width: 850px) {
-    main {
-        height: 100vh;
-    }
-
     .container {
-        transform: rotate(90deg);
-        width: 500px;
-        height: 500px;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        margin: 80px 0;
     }
 
     .transparentskills {
-        transform: rotate(-90deg);
+        max-width: 80%;
+        height: fit-content;
+        margin: auto;
     }
 }
 
 @media (max-width: 677px) {
-    main {
-        height: 70vh;
-    }
-
     .container {
-        height: 450px;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
     }
 
     .container .transparentskills p {
@@ -83,5 +82,14 @@ footer {
 
     .container h1 {
         margin-top: 20px;
+    }
+
+    .footcontainer .footer-nav li {
+        padding: 15px;
+    }
+
+    .transparentskills {
+        max-width: 80%;
+        height: fit-content;
     }
 }

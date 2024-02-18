@@ -128,4 +128,8 @@ footer {
 	.navbar .nav-links li {
 		padding: 10px;
 	}
+
+	.footcontainer .footer-nav li {
+        padding: 15px;
+    }
 }
